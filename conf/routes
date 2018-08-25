@@ -1,0 +1,29 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                               controllers.HomeController.index
+GET     /u/html-attr-name               controllers.HomeController.htmlAttrName(payload: String)
+GET     /html-attr-val                  controllers.HomeController.htmlAttrVal(payload: String)
+GET     /html-unquot-attr-val           controllers.HomeController.htmlAttrUnquotVal(payload: String)
+GET     /html-single-quot-attr-val      controllers.HomeController.htmlAttrSingleQuotVal(payload: String)
+GET     /html-el                        controllers.HomeController.htmlEl(payload: String)
+GET     /u/html-comment                 controllers.HomeController.htmlComment(payload: String)
+GET     /html-href                      controllers.HomeController.htmlHref(payload: String)
+GET     /html-href-param                controllers.HomeController.htmlHrefParam(payload: String)
+GET     /u/html-tag-name                controllers.HomeController.htmlTagName(payload: String)
+GET     /js-quoted-val                  controllers.HomeController.jsQuotedVal(payload: String)
+GET     /js-single-quot-val             controllers.HomeController.jsSingleQuotVal(payload: String)
+GET     /js-unquoted-val                controllers.HomeController.jsUnquotedVal(payload: String)
+GET     /js-func-arg                    controllers.HomeController.jsFuncArg(payload: String)
+GET     /style-prop-value               controllers.HomeController.stylePropValue(payload: String)
+GET     /style-single-quot-prop-value   controllers.HomeController.styleSingleQuotPropValue(payload: String)
+GET     /style-unquot-sel-prop-value    controllers.HomeController.styleUnquotSelPropVal(payload: String)
+GET     /style-sel-prop-value           controllers.HomeController.styleSelPropVal(payload: String)
+GET     /u/style-context                controllers.HomeController.styleContext(payload: String)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

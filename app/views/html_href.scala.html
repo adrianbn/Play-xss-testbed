@@ -1,0 +1,13 @@
+@(payload: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML HREF/SRC Attribute</title>
+</head>
+<body>
+@* SRC/HREF Attribute *@
+XSS Payload: <a href="@payload">This is yet another link</a>
+<br/>
+</body>
+</html>

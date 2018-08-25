@@ -1,0 +1,19 @@
+@(payload: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Function Arg</title>
+</head>
+<body>
+    <script>
+        @* JS Func Arg *@
+        function dummy(a) {
+            return a;
+        }
+
+        var x = dummy(@payload);
+        console.log(x);
+    </script>
+</body>
+</html>

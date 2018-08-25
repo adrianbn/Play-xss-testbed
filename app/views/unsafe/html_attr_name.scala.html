@@ -1,0 +1,13 @@
+@(payload: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Attribute Name</title>
+</head>
+<body>
+@* HTML Attribute Name *@
+XSS Payload: <a href="#" @payload="value">This is another link</a>
+<br/>
+</body>
+</html>
